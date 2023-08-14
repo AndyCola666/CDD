@@ -1,0 +1,401 @@
+* /* Eso elige automáticamente a todos los elementos de css*/
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background:linear-gradient(
+        20deg,
+        rgba(228, 142, 142, 0.5),
+        rgba(173, 3, 3, 0.5)
+        
+    );
+}
+
+html
+{
+    scroll-behavior: smooth; /*Desplazamiento suave en la página*/
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.73em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+footer{font-size: .75em;}
+li{font-size: 1.3em;}
+
+button{
+    font-size: 1.5em;
+    position:relative;
+    font-weight: 500;
+    padding: 15px 20px; /*Padding para dimensiones de objeto*/
+    border-radius: 10px;/*Para "lijar" los bordes*/
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 1px rgba(0,0,0,0.2); /* Esto es: posX,posY y difuminado de la sombra con el color que se elija*/
+    color: rgb(245, 245, 245);
+    background:linear-gradient(
+        6deg,
+        rgba(197, 67, 223, 0.5),
+        rgba(35, 2, 37, 0.5)
+    );
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(111, 51, 167);/*Esto es para cuando pasa el cursos encima*/ 
+}
+
+.color-letrasEsp
+{
+    color:rgb(131, 27, 27);
+}
+
+.container
+{
+    max-width: 1400px;/*Esta madre establece px maximos hasta donde se van a quedar los objetos*/    
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: center;
+    background: linear-gradient(
+        40deg,
+        rgba(73, 16, 16, 0.45),
+        rgba(60, 20, 87, 0.45)
+    )
+    ,url("http://getwallpapers.com/wallpaper/full/5/a/8/1442400-mtg-eldrazi-wallpaper-1920x1080-hd.jpg");
+    box-shadow:  0 20px 26px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    backdrop-filter: blur(30px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .logo
+{
+    margin: 0;
+    max-width: fit-content;
+    padding: auto;   
+    
+}
+
+
+header nav
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgb(224, 77, 9)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+
+}
+
+header a{/*Ahora, por alguna razón, este "a" maneja al hover .-.*/
+    padding: 5px 12px;
+    text-decoration:dashed;
+    font-weight: bolder;
+
+}
+header a:hover
+{
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgba(163, 9, 168, 0.637)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;/*Esta madre resuelve lo del hover del vínculo*/
+}
+
+
+header .container
+{
+    display:flex;/*Esta madre junto con el column es para alinear las cosas*/
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#hero
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: center;
+    height: 75vh;
+    color: aliceblue;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(/*Esta madre es para poner trasnparencia/gradiente de color a las cosas*/
+        75deg,
+        rgba(240, 175, 35, 0.3),
+        rgba(209, 65, 228, 0.5)
+    )
+    ,url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/11/MTG-Radiant-Serra-Archangel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#hero h1
+{
+    margin: 0%;
+    display: inline-block;
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgb(224, 77, 9)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+ #hero p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border-radius: 8px;/*Para "lijar" los bordes*/
+    background-size:auto;
+
+}
+#hero .Descripcion
+{
+    margin: 0%;
+    display: inline-block;
+    background:linear-gradient(
+        45deg,
+        rgb(243, 243, 218),
+        rgb(240, 190, 190)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+#hero .fondo
+{
+    width: 400px;
+    height: 315px;
+    border-radius: 25px;
+    border: 50px;
+    backdrop-filter: blur(1.5px);
+    background: linear-gradient(
+        10deg,
+        rgba(0,0,0,0.5),
+        rgba(0, 0, 0, 0.06)
+    );
+    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.5);
+}
+#hero .container
+{
+    padding-bottom: 10px;
+}
+
+
+#productos 
+{
+    height: 180px 250px;
+    text-align:center center;
+    background: linear-gradient(
+        10deg,
+        rgba(56, 15, 38.5),
+        rgba(117, 11, 11, 0.473)
+    )
+    ,url("https://wallpapercave.com/wp/wp4579252.jpg")
+}
+
+#productos .container
+{
+    padding: 8%;
+}
+
+#productos h1
+{
+    margin: 0;
+}
+
+#productos p
+{
+    display: none;
+}
+
+#productos .carta
+{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    box-sizing: content-box;
+}
+
+#productos h1
+{
+    background:linear-gradient(
+        45deg,
+        rgb(240, 165, 165),
+        rgb(243, 243, 218)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+#productos h3
+{
+    background:linear-gradient(
+        45deg,
+        rgb(243, 243, 218),
+        rgb(240, 190, 190)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+.carta:first-child/*Esto hace que se seleccione solo la primera de las 3 cartas*/
+{
+    background-image: linear-gradient(
+    75deg,
+    rgba(19, 13, 1, 0.3),
+    rgba(182, 25, 202, 0.5)
+)
+,url("https://i.pinimg.com/736x/81/f8/b2/81f8b27ad689deb35ae73449deb4ea02--character-concept-character-art.jpg");
+}
+
+.carta:nth-child(2)
+{
+    background-image: linear-gradient(
+        75deg,
+        rgba(19, 13, 1, 0.3),
+        rgba(182, 25, 202, 0.5)
+    )
+    ,url("https://i.pinimg.com/originals/c8/46/18/c846180c387952a790edb29f86b481d2.jpg");
+}
+/*Para que los siblings se puedan usar así, tienen que estar envueltos en un contenedor común*/
+
+
+#Beneficios 
+{
+    padding-bottom: 5%;
+    position: relative;
+    backdrop-filter: blur(1.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background: linear-gradient(
+        10deg,
+        rgba(117, 11, 11, 0.473),
+        rgba(56, 15, 38.5)
+    )
+    ,url("https://images2.alphacoders.com/616/616626.jpg")
+}
+
+#Beneficios p
+{
+    margin: .5em;
+    font-weight:650;
+    font-size: 1.3em;
+    background: linear-gradient(
+        10deg,
+        rgb(228, 213, 223),
+        rgba(243, 185, 25, 0.473)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+
+}
+
+#Beneficios nav
+{ 
+    font-size: 1.0em;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+
+    background: linear-gradient(
+        45deg,
+        rgb(228, 151, 106),
+        rgb(133, 107, 95)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    
+}
+
+.retorno a{
+    
+    text-decoration:wavy;
+    font-weight: bolder;
+}
+.retorno a:hover
+{
+    background: linear-gradient(
+        45deg,
+        rgb(90, 64, 64),
+        rgba(230, 150, 233, 0.637)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+#Beneficios .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Beneficios h2
+{
+    margin: .3em;
+    background: linear-gradient(
+        45deg,
+        rgb(116, 71, 71),
+     rgba(243, 185, 25, 0.473)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+footer
+{
+    padding-bottom: 10px;
+    text-align: center;
+    background: linear-gradient(
+        5deg,
+        rgb(0, 0, 0),
+        rgba(3, 0, 0, 0.658)
+    );
+    color: azure;
+    
+}
