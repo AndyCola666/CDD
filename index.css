@@ -74,7 +74,7 @@ header{
         rgba(73, 16, 16, 0.45),
         rgba(60, 20, 87, 0.45)
     )
-    ,url("/Recursos/header.jpg");
+    ,url("Recursos/header.jpg");
     box-shadow:  0 20px 26px rgba(0, 0, 0, 0.5);
     height: 100vh;
     backdrop-filter: blur(30px);
@@ -154,7 +154,7 @@ header .container
         rgba(240, 175, 35, 0.3),
         rgba(209, 65, 228, 0.5)
     )
-    ,url("/Recursos/acercade.jpg");
+    ,url("Recursos/acercade.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -224,7 +224,7 @@ header .container
         10deg,
         rgba(56, 15, 38, 0.5),
         rgba(117, 11, 11, 0.473)
-    ), url("/Recursos/productos.jpg");
+    ), url("Recursos/productos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -317,21 +317,21 @@ header .container
         75deg,
         rgba(19, 13, 1, 0.3),
         rgba(182, 25, 202, 0.5)
-    ), url("/Recursos/carta1.jpg");
+    ), url("Recursos/carta1.jpg");
 }
 .carta:nth-child(2) {
     background-image: linear-gradient(
         75deg,
         rgba(19, 13, 1, 0.3),
         rgba(182, 25, 202, 0.5)
-    ), url("/Recursos/carta2.jpg");
+    ), url("Recursos/carta2.jpg");
 }
 .carta:nth-child(3) {
     background-image: linear-gradient(
         75deg,
         rgba(19, 13, 1, 0.3),
         rgba(182, 25, 202, 0.5)
-    ), url("/Recursos/carta3.jpg");
+    ), url("Recursos/carta3.jpg");
 }
 /*Para que los siblings se puedan usar así, tienen que estar envueltos en un contenedor común*/
 
@@ -352,7 +352,7 @@ header .container
         rgba(117, 11, 11, 0.473),
         rgba(56, 15, 38.5)
     )
-    ,url("/Recursos/beneficios.jpg")
+    ,url("Recursos/beneficios.jpg")
 }
 
 #Beneficios p
@@ -526,7 +526,7 @@ footer
 /* FAQ PAGE STYLES */
 .faq-bg {
     min-height: 70vh;
-    background: linear-gradient(10deg, rgba(56, 15, 38, 0.5), rgba(117, 11, 11, 0.473)), url('/Recursos/faq.jpg');
+    background: linear-gradient(10deg, rgba(56, 15, 38, 0.5), rgba(117, 11, 11, 0.473)), url('Recursos/faq.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -602,7 +602,7 @@ footer
 /* DETALLE PRODUCTO PAGE STYLES */
 .detalle-bg {
     min-height: 70vh;
-    background: linear-gradient(10deg, rgba(56, 15, 38, 0.5), rgba(117, 11, 11, 0.473)), url('/Recursos/faq.jpg');
+    background: linear-gradient(10deg, rgba(56, 15, 38, 0.5), rgba(117, 11, 11, 0.473)), url('Recursos/faq.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
