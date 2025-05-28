@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartaDeDiez</title>
+    <link rel="icon" href="../Recursos/Logo.png"><!--Para poner ícono en barra-->
+    <link rel="stylesheet" href="../index.css"> <!--Esta madre se usa para conectar con el css-->
+</head>
+<body>
+    <div class="logo-fixed" id="logoFixed">
+        <img src="../Recursos/Logo.png" width="60" height="60" style="cursor:pointer">
+    </div>
+    <header>
+        <div class="container-header">
+            <div class="logo" id="mainLogo">
+                <img src="../Recursos/CartaDiez_preview_rev_1.png" width="350px" height="350px">
+            </div>
+            <section id="ali">
+                <div class="container-ali">
+                    <nav>
+                        <a href="#hero">Acerca de nosotros</a>
+                        <a href="#productos">Que ofrecemos</a>
+                        <a href="#Beneficios">Beneficios</a>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <section id="hero">  
+        <div class="fondo">
+            <div class="container">
+                <div id="Subtitulo">
+                    <h1>¿Carta De Diez?</h1>
+                </div>
+                <div id="Desc">
+                    <div class="Descripcion">
+                        <p class="mtg">Ofrecemos una opción alternativa<br>para adquirir cartas de <br> Magic: The Gathering. </p>
+                    </div>
+                    <button id="btn-faq" onclick="location.href='html/faq.html'">Preguntas frecuentes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="container">
+            <h1>¿Cuales son nuestros prodúctos?</h1>
+            <div class="CARTAS">
+            <div class="carta">
+                <h3>Tierras básicas 10x$9mxn</h3>
+                <p>TextoTextoTextoTextoTextoTexto</p>
+                <button class="saber-mas" onclick="location.href='html/detalle-tierras.html'"> Saber más</button>
+    
+            </div>
+            <div class="carta">
+                <h3>Paquetes de 17 cartas</h3>
+                <p>TextoTextoTextoTextoTextoTexto</p>
+                <button class="saber-mas" onclick="location.href='html/detalle-paquetes.html'"> Saber más</button>
+    
+            </div>
+            <div class="carta">
+                <h3>Cartas sueltas (Todas las rarezas)</h3>
+                <p>TextoTextoTextoTextoTextoTexto</p>
+                <button class="saber-mas" onclick="location.href='html/detalle-sueltas.html'"> Saber más</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Beneficios">
+        <div class="container">
+            <h2>¿Quieres más beneficios?</h2>
+            <p>Premios, promociones y más.</p>
+            <a href="https://www.instagram.com/cartadediez?igsh=MWtqZDF2N2wzZGpydg==" target="_blank" style="display:inline-block;"><img src="/Recursos/insta.png" alt="Instagram" style="width:56px;height:56px;border-radius:16px;box-shadow:0 2px 8px rgba(0,0,0,0.18);vertical-align:middle;cursor:pointer;"></a>
+            <p>¡Visita nuestro Instagram!</p>
+        </div>
+    </section>
+
+    <!-- Esto es el pié de página y el &copy; es el símbolo de copyright-->
+    <footer>
+        <div class="container">
+            <p>&copy;Carta de Diez 2025</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+window.addEventListener('scroll', function() {
+    const logo = document.getElementById('mainLogo');
+    const logoFixed = document.getElementById('logoFixed');
+    const heroSection = document.getElementById('hero');
+    const heroTop = heroSection.getBoundingClientRect().top;
+    if (heroTop <= 0) {
+        logo.style.opacity = '0';
+        logo.style.transition = 'opacity 0.7s cubic-bezier(.77,0,.18,1)';
+        logoFixed.classList.add('visible');
+    } else {
+        logo.style.opacity = '1';
+        logo.style.transition = 'opacity 0.7s cubic-bezier(.77,0,.18,1)';
+        logoFixed.classList.remove('visible');
+    }
+});
+
+document.getElementById('logoFixed').addEventListener('click', function() {
+    document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+</html>

@@ -1,0 +1,673 @@
+* /* Eso elige automáticamente a todos los elementos de css*/
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background:linear-gradient(
+        20deg,
+        rgba(228, 142, 142, 0.5),
+        rgba(173, 3, 3, 0.5)
+        
+    );
+}
+
+html
+{
+    scroll-behavior: smooth; /*Desplazamiento suave en la página*/
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.73em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+footer{font-size: .75em;}
+li{font-size: 1.3em;}
+
+button{
+    font-size: 1.5em;
+    position:relative;
+    font-weight: 500;
+    padding: 15px 20px; /*Padding para dimensiones de objeto*/
+    border-radius: 10px;/*Para "lijar" los bordes*/
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 1px rgba(0,0,0,0.2); /* Esto es: posX,posY y difuminado de la sombra con el color que se elija*/
+    color: rgb(245, 245, 245);
+    background:linear-gradient(
+        6deg,
+        rgba(197, 67, 223, 0.5),
+        rgba(35, 2, 37, 0.5)
+    );
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(111, 51, 167);/*Esto es para cuando pasa el cursos encima*/ 
+}
+
+.color-letrasEsp
+{
+    color:rgb(131, 27, 27);
+}
+
+.container
+{
+    max-width: 1400px;/*Esta madre establece px maximos hasta donde se van a quedar los objetos*/    
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: center;
+    background: linear-gradient(
+        40deg,
+        rgba(73, 16, 16, 0.45),
+        rgba(60, 20, 87, 0.45)
+    )
+    ,url("/Recursos/header.jpg");
+    box-shadow:  0 20px 26px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    backdrop-filter: blur(30px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+header .logo
+{
+    margin: 0;
+    max-width: fit-content;
+    padding: auto;   
+    
+}
+
+
+header nav
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgb(224, 77, 9)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+
+}
+
+header a{/*Ahora, por alguna razón, este "a" maneja al hover .-.*/
+    padding: 5px 12px;
+    text-decoration:dashed;
+    font-weight: bolder;
+
+}
+header a:hover
+{
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgba(163, 9, 168, 0.637)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;/*Esta madre resuelve lo del hover del vínculo*/
+}
+
+
+header .container
+{
+    display:flex;/*Esta madre junto con el column es para alinear las cosas*/
+    flex-direction: column;
+    align-items: center;
+    margin-top: -70px; /*Para que se vea más centrado*/
+}
+
+
+#hero
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: center;
+    height: 75vh;
+    color: aliceblue;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(/*Esta madre es para poner trasnparencia/gradiente de color a las cosas*/
+        75deg,
+        rgba(240, 175, 35, 0.3),
+        rgba(209, 65, 228, 0.5)
+    )
+    ,url("/Recursos/acercade.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#hero h1
+{
+    margin: 0%;
+    display: inline-block;
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgb(224, 77, 9)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+ #hero p
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border-radius: 8px;/*Para "lijar" los bordes*/
+    background-size:auto;
+
+}
+#hero .Descripcion
+{
+    margin: 0%;
+    display: inline-block;
+    background:linear-gradient(
+        45deg,
+        rgb(243, 243, 218),
+        rgb(240, 190, 190)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+#hero .fondo
+{
+    width: 400px;
+    height: 315px;
+    border-radius: 25px;
+    border: 50px;
+    backdrop-filter: blur(1.5px);
+    background: linear-gradient(
+        10deg,
+        rgba(0,0,0,0.5),
+        rgba(0, 0, 0, 0.06)
+    );
+    box-shadow: 0 20px 26px rgba(0, 0, 0, 0.5);
+}
+#hero .container
+{
+    padding-bottom: 10px;
+}
+
+
+#productos 
+{
+    background: linear-gradient(
+        10deg,
+        rgba(56, 15, 38, 0.5),
+        rgba(117, 11, 11, 0.473)
+    ), url("/Recursos/productos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    text-align: center;
+}
+
+#productos img {
+    display: none;
+}
+
+#productos .container
+{
+    padding: 8%;
+}
+
+#productos h1
+{
+    margin: 0;
+        background: linear-gradient(
+        45deg,
+        rgb(155, 81, 81),
+     rgba(243, 185, 25, 0.658)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+#productos p
+{
+    display: none;
+}
+
+.CARTAS {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+    margin: 24px 0 0 0;
+    padding: 0 8px;
+}
+
+.carta {
+    flex: 1 1 300px;
+    max-width: 340px;
+    min-width: 260px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(255,255,255,0.07);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-radius: 15px;
+    padding: 32px 16px;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.carta:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25), 0 2px 8px rgba(182, 25, 202, 0.25);
+    filter: brightness(1.08) saturate(1.1);
+    z-index: 3;
+}
+
+.carta h3, .carta p, .carta button {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.carta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    z-index: 1;
+    opacity: 0.7;
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+        75deg,
+        rgba(19, 13, 1, 0.3),
+        rgba(182, 25, 202, 0.5)
+    ), url("/Recursos/carta1.jpg");
+}
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+        75deg,
+        rgba(19, 13, 1, 0.3),
+        rgba(182, 25, 202, 0.5)
+    ), url("/Recursos/carta2.jpg");
+}
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+        75deg,
+        rgba(19, 13, 1, 0.3),
+        rgba(182, 25, 202, 0.5)
+    ), url("/Recursos/carta3.jpg");
+}
+/*Para que los siblings se puedan usar así, tienen que estar envueltos en un contenedor común*/
+
+
+#Beneficios 
+{
+    padding-bottom: 5%;
+    position: relative;
+    backdrop-filter: blur(1.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background: linear-gradient(
+        10deg,
+        rgba(117, 11, 11, 0.473),
+        rgba(56, 15, 38.5)
+    )
+    ,url("/Recursos/beneficios.jpg")
+}
+
+#Beneficios p
+{
+    margin: .5em;
+    font-weight:650;
+    font-size: 1.3em;
+    background: linear-gradient(
+        10deg,
+        rgb(228, 213, 223),
+        rgba(243, 185, 25, 0.473)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+
+}
+
+#Beneficios nav
+{ 
+    font-size: 1.0em;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 15px;
+
+    background: linear-gradient(
+        45deg,
+        rgb(228, 151, 106),
+        rgb(133, 107, 95)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    
+}
+
+.retorno a{
+    
+    text-decoration:wavy;
+    font-weight: bolder;
+}
+.retorno a:hover
+{
+    background: linear-gradient(
+        45deg,
+        rgb(90, 64, 64),
+        rgba(230, 150, 233, 0.637)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+#Beneficios .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Beneficios h2
+{
+    margin: .3em;
+    background: linear-gradient(
+        45deg,
+        rgb(116, 71, 71),
+     rgba(243, 185, 25, 0.473)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+
+footer
+{
+    padding-bottom: 10px;
+    text-align: center;
+    background: linear-gradient(
+        5deg,
+        rgb(0, 0, 0),
+        rgba(3, 0, 0, 0.658)
+    );
+    color: azure;
+    
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    transition: opacity 1.2s cubic-bezier(.77,0,.18,1), all 0.5s ease;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 350px;
+    height: 350px;
+    transition: all 0.7s cubic-bezier(.77,0,.18,1);
+}
+
+.logo-fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    pointer-events: auto;
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.5s cubic-bezier(.77,0,.18,1), transform 0.5s cubic-bezier(.77,0,.18,1);
+}
+.logo-fixed.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.logo-fixed img {
+    width: 60px;
+    height: 60px;
+}
+
+.container-ali nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px;
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgb(224, 77, 9)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.container-ali a {
+    padding: 5px 12px;
+    text-decoration: dashed;
+    font-weight: bolder;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.container-ali a:hover {
+    background: linear-gradient(
+        45deg,
+        rgb(0, 0, 0),
+        rgba(163, 9, 168, 0.637)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* FAQ PAGE STYLES */
+.faq-bg {
+    min-height: 70vh;
+    background: linear-gradient(10deg, rgba(56, 15, 38, 0.5), rgba(117, 11, 11, 0.473)), url('/Recursos/faq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 40px 0;
+}
+
+.faq-flex {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.faq-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.faq-card {
+    flex: 1 1 320px;
+    min-width: 260px;
+    max-width: 400px;
+    background: rgba(255,255,255,0.10);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-radius: 15px;
+    padding: 32px 24px;
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    backdrop-filter: blur(2px);
+}
+.faq-flex h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    background: linear-gradient(
+        45deg,
+        rgb(243, 188, 163),
+        rgb(250, 148, 148)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.faq-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25), 0 2px 8px rgba(182, 25, 202, 0.25);
+    filter: brightness(1.08) saturate(1.1);
+    z-index: 3;
+}
+
+.faq-card strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #ffe7a3;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* DETALLE PRODUCTO PAGE STYLES */
+.detalle-bg {
+    min-height: 70vh;
+    background: linear-gradient(10deg, rgba(56, 15, 38, 0.5), rgba(117, 11, 11, 0.473)), url('/Recursos/faq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 40px 0;
+}
+
+.detalle-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.detalle-container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background: rgba(0, 0, 0, 0.411);
+    border-radius: 18px;
+    padding: 32px 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    backdrop-filter: blur(2px);
+}
+
+.detalle-container h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    background: linear-gradient(
+        45deg,
+        rgb(146, 134, 134),
+        rgb(194, 120, 86)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.detalle-img-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.detalle-img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    object-fit: cover;
+}
+
+.detalle-desc {
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 500;
+    margin-top: 0;
+    text-align: center;
+}
+
